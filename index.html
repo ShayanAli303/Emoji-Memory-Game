@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emoji Memory Game - By Shayan Ali</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body >
+  <!-- Welcome Screen -->
+  <div class="welcome-screen" id="welcomeScreen">
+    <h1>Emoji Memory Challenge</h1>
+    <p>By Shayan Ali</p>
+    <button onclick="startGame()">Play</button>
+  </div>
+
+  <!-- Game Screen -->
+  <div class="game-container" id="gameContainer" style="display:none;">
+    <div class="top-bar">
+      <div class="level-info">Level: <span id="level">1</span></div>
+      <div class="timer">Time Left: <span id="time">60</span>s</div>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+
+  <!-- Game Over Screen -->
+  <div class="game-over" id="gameOverScreen" style="display:none;">
+    <h2>Wanna try again?</h2>
+    <button onclick="restartGame()">Restart</button>
+  </div>
+  <div id="level-popup" class="popup hidden">Level Complete!</div>
+
+
+  <audio id="tickSound" src="https://freesound.org/data/previews/337/337049_3231494-lq.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
